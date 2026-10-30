@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Doorhub food delivery landing page recreated from a reference design.">
+  <title>12Doorhub — Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Doorhub home">
+        <img src="/image/logo.jpeg" alt="Doorhub logo">
+        <span>Doorhub</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Menu</a>
+        <a href="#how">How it works</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-small" href="#dishes">Order now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">FAST • FRESH • AT YOUR DOOR</p>
+        <h1>We Provide<br>Delivery Within<br>30 Min</h1>
+        <p>Enjoy your favourite food at home. We provide fresh meals and quick delivery right to your doorstep.</p>
+        <form class="search-box" id="searchForm">
+          <input id="locationInput" type="text" placeholder="Enter your location" aria-label="Location">
+          <button class="btn" type="submit">Search</button>
+        </form>
+        <small id="searchMessage" class="form-message"></small>
+      </div>
+      <div class="hero-art">
+        <img src="/image/delivery-rider-front-transparent.png" alt="Food delivery rider on a scooter">
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <h2>More Than 20,000 Dishes<br>To Order!</h2>
+          <p>Choose a category and discover something delicious.</p>
+        </div>
+
+        <div class="categories">
+          <button class="category" data-category="sushi"><img src="/image/Sushi.webp" alt="">Sushi</button>
+          <button class="category active" data-category="pizza"><img src="/image/Pizza.webp" alt="">Pizza</button>
+          <button class="category" data-category="burgers"><img src="/image/Burgers.webp" alt="">Burgers</button>
+          <button class="category" data-category="desserts"><img src="/image/Desserts.webp" alt="">Desserts</button>
+          <button class="category" data-category="salad"><img src="/image/Salad11.webp" alt="">Salad</button>
+          <button class="category" data-category="pasta"><img src="/image/Pasta.webp" alt="">Pasta</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-heading">
+          <h2>How To Order?</h2>
+          <p>Four simple steps</p>
+        </div>
+        <div class="steps">
+          <div class="step"><img src="/image/Choose your.webp" alt=""><span>01</span><h3>Choose your<br>location</h3></div>
+          <div class="step"><img src="/image/Choose11.webp" alt=""><span>02</span><h3>Choose<br>restaurant</h3></div>
+          <div class="step"><img src="/image/Make your.webp" alt=""><span>03</span><h3>Make your<br>order</h3></div>
+          <div class="step"><img src="/image/Food is on the.webp" alt=""><span>04</span><h3>Food is on the<br>way</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dishes" id="dishes">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Popular dishes with delivery</h2>
+          <p>Fresh meals prepared with quality ingredients and delivered quickly.</p>
+        </div>
+
+        <div class="dish-grid" id="dishGrid">
+          <article class="dish-card" data-category="sushi">
+            <img src="/image/Flavor cabbage with sauce.webp" alt="Flavored cabbage with sauce">
+            <h3>Flavored cabbage<br>with sauce</h3><p class="price">$5.00</p>
+            <button class="add" data-item="Flavored cabbage with sauce">+</button>
+          </article>
+          <article class="dish-card featured" data-category="pizza">
+            <img src="/image/Fresh soup with.jpg" alt="Fresh salad bowl">
+            <h3>Fresh soup with<br>tasty spice</h3><p class="price">$7.56</p>
+            <button class="add" data-item="Fresh soup with tasty spice">+</button>
+          </article>
+          <article class="dish-card" data-category="burgers">
+            <img src="/image/Chicken with.webp" alt="Chicken with vegetables">
+            <h3>Chicken with<br>vegetables</h3><p class="price">$3.39</p>
+            <button class="add" data-item="Chicken with vegetables">+</button>
+          </article>
+          <article class="dish-card" data-category="salad">
+            <img src="/image/Traditional Greek.jpg" alt="Traditional Greek salad">
+            <h3>Traditional Greek<br>salad</h3><p class="price">$4.99</p>
+            <button class="add" data-item="Traditional Greek salad">+</button>
+          </article>
+          <article class="dish-card" data-category="pasta">
+            <img src="/image/Sweet-meat special.webp" alt="Three-meat special lasagna">
+            <h3>Three-meat special<br>lasagna</h3><p class="price">$5.10</p>
+            <button class="add" data-item="Three-meat special lasagna">+</button>
+          </article>
+          <article class="dish-card" data-category="desserts">
+            <img src="/image/Veggie vegetable1.jpg" alt="Veggie vegetable bulgogi">
+            <h3>Veggie vegetable<br>bulgogi</h3><p class="price">$4.83</p>
+            <button class="add" data-item="Veggie vegetable bulgogi">+</button>
+          </article>
+        </div>
+        <p class="center"><button class="btn" id="showAll">Show all dishes <span>→</span></button></p>
+      </div>
+    </section>
+
+    <section class="split-section container">
+      <div class="split-art"><img src="/image/Chef preparing food.avif" alt="Chef preparing food"></div>
+      <div class="split-copy">
+        <h2>Delicious and healthy<br>food for your body</h2>
+        <p>The easiest way to enjoy delicious meals made with quality ingredients and delivered fresh.</p>
+        <div class="checks">
+          <span>✓ Online & offline ordering</span><span>✓ Quick delivery</span>
+          <span>✓ Fresh ingredients</span><span>✓ Special offers</span>
+        </div>
+        <a class="btn" href="#dishes">Choose a meal</a>
+        <a class="btn btn-outline" href="#articles">Read more</a>
+      </div>
+    </section>
+
+    <section class="split-section app-section container">
+      <div class="split-copy">
+        <h2>Make The Delicious Food<br>and Order Our App</h2>
+        <p>Order your favourite meals from anywhere and track your delivery in real time.</p>
+        <ul>
+          <li>Follow the delivery status</li>
+          <li>Order from many restaurants</li>
+        </ul>
+        <div class="stores">
+          <img src="/image/App Store.png" alt="App Store">App Store
+          <img src="/image/Google Play.png" alt="Google Play">Google Play
+        </div>
+      </div>
+      <div class="phone-art"><img src="/image/phone.jpeg" alt="Doorhub mobile app"></div>
+    </section>
+
+    <section class="testimonial container">
+      <div class="testimonial-art"><img src="/image/Happy Doorhub customer.webp" alt="Happy Doorhub customer"></div>
+      <div class="testimonial-copy">
+        <h2>What Our clients say<br>about us</h2>
+        <p>“The food arrived quickly, tasted fresh, and the ordering process was simple.”</p>
+        <div class="person">
+          <div class="avatar">BO</div>
+          <div><strong>Balogun Opeyemi.A</strong><br><span>Happy customer</span><br><span class="stars">★★★★★</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section articles" id="articles">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Articles and useful tips</h2>
+          <p>Helpful ideas for better food choices and a healthier lifestyle.</p>
+        </div>
+        <div class="article-grid">
+          <article><img src="/image/Donuts.webp" alt="Donuts"><h3>New seafood recipe perfect for losing weight</h3><p>Simple ideas for a balanced and enjoyable meal.</p><a href="#">Read more →</a></article>
+          <article><img src="/image/Healthy bowl.webp" alt="Burger"><h3>Balance of proteins, fats and carbs. How to get it?</h3><p>Build a practical plate with the right combination.</p><a href="#">Read more →</a></article>
+          <article><img src="/image/Fresh fruits.webp" alt="Fresh fruit"><h3>The importance of proper and healthy eating</h3><p>Small daily choices can make meals more nutritious.</p><a href="#">Read more →</a></article>
+        </div>
+        <p class="center"><a class="btn" href="#">See all →</a></p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div><h2>Subscribe our<br>newsletter</h2><p>Get new offers and food tips in your inbox.</p>
+          <form id="newsletterForm" class="newsletter-form"><input id="email" type="email" placeholder="Your email address" required><button class="btn" type="submit">Subscribe</button></form>
+          <small id="newsletterMessage"></small>
+        </div>
+        <div class="ready"><h2>Ready to<br>order?</h2><a class="btn btn-light" href="#dishes">Order now</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div><div class="brand"><img src="/image/logo.jpeg" alt=""> <span>Doorhub</span></div><p>Fresh food, fast delivery, simple ordering.</p></div>
+      <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#dishes">Menu</a><a href="#how">How it works</a></div>
+      <div><h4>Resources</h4><a href="#articles">Articles</a><a href="#">FAQ</a><a href="#">Privacy</a></div>
+      <div><h4>Get in touch</h4><a href="mailto:hello@doorhub.test">hello@doorhub.test</a><a href="tel:+2347032164496">+234 703 216 4496</a></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Doorhub. All rights reserved.</div>
+  </footer>
+
+  <!-- <div class="toast" id="toast" role="status"></div>
+  <script src="js/script.js"></script> -->
+</body>
+</html>

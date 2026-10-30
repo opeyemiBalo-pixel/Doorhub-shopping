@@ -1,0 +1,27 @@
+header{
+    background-color: rgb(31, 43, 110);
+}
+nav{
+    display: flex;
+    justify-content: end;
+    margin-top: -25px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    background-color: 
+}
+.opeyemi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    gap: px;
+}
+/* .he img{
+    width: 200px;
+    height: auto;
+} */

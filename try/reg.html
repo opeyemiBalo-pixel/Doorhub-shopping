@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="shortcut icon" href="/image/FRESHMAN OF THE YEARS.png" type="/image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins"sans-serif;
+        }
+
+
+            body{
+            display: flex;
+            justify-content: center;
+            align-items:  center;
+            min-height: 130vh;
+            background: url(/image/FRESHMAN\ OF\ THE\ YEARS.png) no-repeat;
+            background-size: cover;
+            background-position: center
+        }
+        .gene{
+            width: 420px;
+            background:transparent;
+            border: 2px solid rgb(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-sizing: 0 0 10px rgba(0, 0, 0, .2);
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        .gene h1{
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .gene .input-box{
+            position: relative;
+            width: 100%;
+            /* background: salmon; */
+            margin: 30px 0;
+        }
+
+        .input-box input{
+            width: 100%;
+            height: 14px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgb(255, 255, 255, .2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+            margin-top: 20px;
+        }
+
+        .input-box input::placeholder{
+            color: #fff;
+        }
+
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50);
+            font-size: 20px;
+        }
+        .btn{
+            width: 100%;
+            height: 35px;
+            background: #fff;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+            transition: .30m;
+            
+        }
+
+        .btn:hover{
+            transform: translateY(-1px);
+        }
+        .button{
+            display: flex;
+            gap: 30px;
+        }
+        button a{
+            text-decoration: none;
+            color: #333;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="gene">
+        <form action="">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="First-Name" required>
+                <input type="text" placeholder="Last-Name" required>
+            </div>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="btn">Sign up</button>
+                <button class="btn"><a href="form.html">Login</a></button>
+            </div>
+
+            
+        </form>
+    </div>
+</body>
+</html>
